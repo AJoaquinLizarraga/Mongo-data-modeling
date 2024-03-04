@@ -1,0 +1,18 @@
+/** @format */
+
+use("platzi_store");
+
+db.stores.insertOne({
+  storeId: "ST001",
+  name: "BatiStore",
+  address: "Carolina 874",
+});
+db.stores_detail.insertOne({
+  storeId: "ST001",
+  description:
+    "Ut ex adipisicing ut amet occaecat non elit. Anim cupidatat nulla ullamco voluptate aliqua qui est proident nisi sint consequat ipsum anim. Quis magna quis ipsum nostrud amet sit duis velit elit nisi minim veniam ea. Officia anim voluptate adipisicing velit consequat in eu velit pariatur deserunt. Pariatur consectetur pariatur ut sit Lorem non sunt aliqua ipsum. Nisi minim minim dolore sint mollit.",
+  manager: {
+    email: "joaem@gmail.com",
+    cellphone: "351351351351",
+  },
+});

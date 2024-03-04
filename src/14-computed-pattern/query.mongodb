@@ -1,0 +1,6 @@
+/** @format */
+
+use("platzi_store");
+
+db.products.find();
+db.order.find(ObjectId("65e58e3ac10049c4cd66abb4"));

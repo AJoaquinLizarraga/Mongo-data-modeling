@@ -1,0 +1,35 @@
+/** @format */
+
+use("platzi_store");
+
+db.users.find();
+db.order.find();
+
+// Esta peticion sirve solo para traer todas las ordenes de compra hechas por el usuario junto con la informacion del usuario
+db.order.aggregate([
+  {
+    $lookup: {
+      from: "users",
+      localField: "user_id",
+      foreignField: "_id",
+      as: "user",
+    },
+  },
+]);
+
+// en esta solo vamos a traer una orden de compra pero aun asi con toda la informacion del usuario
+db.order.aggregate([
+  {
+    $match: {
+      _id: ObjectId("65e57bd1bf3ff73429a72781"),
+    },
+  },
+  {
+    $lookup: {
+      from: "users",
+      localField: "user_id",
+      foreignField: "_id",
+      as: "user",
+    },
+  },
+]);

@@ -1,0 +1,31 @@
+/** @format */
+
+use("platzi_store");
+
+db.products.insertMany([
+  {
+    name: "Product 1",
+    size: ["L", "M", "XL"],
+    price: 1000,
+  },
+  {
+    name: "Product 2",
+    size: ["L", "M", "XL"],
+    price: 1543,
+  },
+  {
+    name: "Product 3",
+    size: ["L", "M", "XL"],
+    price: 7567,
+  },
+  {
+    name: "Product 4",
+    size: ["L", "M", "XL"],
+    price: 34525,
+  },
+  {
+    name: "Product 5",
+    size: ["L", "M", "XL"],
+    price: 34534,
+  },
+]);

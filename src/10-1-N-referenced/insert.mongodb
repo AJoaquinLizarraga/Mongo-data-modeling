@@ -1,0 +1,31 @@
+/** @format */
+
+use("platzi_store");
+
+db.order.insertOne({
+  user_id: ObjectId("65e5716589e3365af399f39c"),
+  data: "2024-03-04",
+  items: [
+    {
+      title: "Zapatos",
+      price: 500,
+      qty: 5,
+    },
+    {
+      title: "Cartera",
+      price: 1000,
+      qty: 1,
+    },
+  ],
+});
+// db.order.insertOne({
+//   user_id: ObjectId("65e57110c71b5eb4bdc4bbc0"),
+//   data: "2024-03-04",
+//   items: [
+//     {
+//       title: "Toy",
+//       price: 500,
+//       qty: 5,
+//     },
+//   ],
+// });
