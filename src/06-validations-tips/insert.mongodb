@@ -1,0 +1,14 @@
+/** @format */
+
+use("platzi_store");
+
+db.users.insertOne({
+  // name: "abel",
+  // last_name: "Lizarraga",
+  // age: 25,
+  email: "joa@gmail.com",
+  password: "AAAbbb123456",
+  role: "admin",
+  // isSingle: true,
+  social_accounts: ["facebook", "X"], // esta no tiene que ir por la definicion de additionalProperties en false en la coleccion
+});

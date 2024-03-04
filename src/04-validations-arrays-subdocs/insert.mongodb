@@ -1,0 +1,12 @@
+/** @format */
+
+use("platzi_store");
+
+db.products.insertOne({
+  name: "Camisa",
+  sizes: ["XL", "M", "L"],
+  categories: {
+    name: "ropa de verano",
+    image: "algo.jpg",
+  },
+});

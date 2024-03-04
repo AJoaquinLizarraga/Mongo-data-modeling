@@ -1,0 +1,14 @@
+# @format
+
+version: "4.27.2"
+
+services:
+  mongodb:
+    image: mongo:6.0.14
+    ports:
+      - 27017:27017
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=joaemLizarraga
+      - MONGO_INITDB_ROOT_PASSWORD=Epiphone1962
+    volumes:
+      - ./mongo_data:/data/db

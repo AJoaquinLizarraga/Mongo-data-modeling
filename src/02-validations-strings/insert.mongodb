@@ -1,0 +1,10 @@
+/** @format */
+
+use("platzi_store");
+
+db.users.insertOne({
+  name: "Joaquin2",
+  last_name: "Lizarraga2",
+  email: "joa@gmail.com ",
+  password: 123456,
+});
